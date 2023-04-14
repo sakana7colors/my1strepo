@@ -1,0 +1,19 @@
+<apex:page >
+    <script src="https://msannohe20220916.my.site.com/lightning/lightning.out.js"></script>
+
+<div id="lightningLocator"></div>
+
+<script>
+    $Lightning.use("c:callFlowApp",
+        function() {
+            $Lightning.createComponent(
+                "c:callFlow",
+                { },                  
+                "lightningLocator",   
+                function(cmp) {}
+            );
+        },
+        'https://msannohe20220916.my.site.com/'  // Site endpoint
+    );
+</script>
+</apex:page>
